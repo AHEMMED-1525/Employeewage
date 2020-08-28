@@ -42,3 +42,4 @@ function workHour() {
   	Salary=$((wageperHour*hour))
    echo "Total salary is : $Salary"
 	echo "Daily income : ${wageArray[@]}"
+	
