@@ -2,7 +2,6 @@
 
 isPresent=1
 ispartTime=2
-EmployeeCheck=$(( RANDOM%3 ))
 
 wageperHour=20
 Totalworkingdays=20
@@ -12,6 +11,7 @@ day=0
 hour=0
 	while (( day<=Totalworkingdays && hour<=TotalHours ))
 	do
+		EmployeeCheck=$(( RANDOM%3 ))
 		(( day++ ))
     	case $EmployeeCheck in
       	  $isPresent)
